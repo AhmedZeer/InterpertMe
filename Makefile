@@ -1,2 +1,2 @@
 final:
-	gcc main.c chunk.c memory.c
+	gcc main.c chunk.c memory.c debug.c value.c
