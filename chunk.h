@@ -2,9 +2,7 @@
 
 #define clox_chunk_h
 #include "common.h"
-
-/*Op stands for 
- *the operation code.*/
+#include "value.h"
 
 typedef enum {
 
@@ -17,6 +15,7 @@ typedef struct {
   int count;
   int capacity;
   uint8_t* code;
+  ValueArray constants;
 } Chunk;
 
 void initChunk(Chunk* chunk);
